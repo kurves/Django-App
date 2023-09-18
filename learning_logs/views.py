@@ -3,7 +3,9 @@ from .models import Topic
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .forms import PersonForm
-u from django.contrib.auth import LogoutView
+from django.contrib.auth.views import LogoutView,LoginView
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate
 
 
 # Create your views here.
@@ -39,4 +41,3 @@ def new_topic(request):
 
 
 
-def Logout_viw
