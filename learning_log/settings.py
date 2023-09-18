@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Third party apps
+    'bootstrap3',
     #My apps
     'learning_logs',
     'users'
@@ -71,6 +73,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'learning_log.wsgi.application'
+
+BOOTSTRAP3 = {
+ 'include_jquery': True,
+ }
 
 
 # Database
