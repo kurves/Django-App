@@ -1,0 +1,13 @@
+
+
+{%block content%}
+
+
+<p>{{topic}}</p>
+{%for entry  in entries%}
+<li>{{entry.text}}</li>
+{%empty%}
+<p>No entry added</p>
+{%endfor%}
+
+{%endblock content%}
